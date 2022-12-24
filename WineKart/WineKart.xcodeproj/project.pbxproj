@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		72C5792F295718D5009B24E1 /* WineKartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5792E295718D5009B24E1 /* WineKartApp.swift */; };
-		72C57931295718D5009B24E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57930295718D5009B24E1 /* ContentView.swift */; };
+		72C57931295718D5009B24E1 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57930295718D5009B24E1 /* ProductsView.swift */; };
 		72C57933295718D7009B24E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C57932295718D7009B24E1 /* Assets.xcassets */; };
 		72C57936295718D7009B24E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C57935295718D7009B24E1 /* Preview Assets.xcassets */; };
 		72C57940295718D7009B24E1 /* WineKartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5793F295718D7009B24E1 /* WineKartTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		72C5792B295718D5009B24E1 /* WineKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C5792E295718D5009B24E1 /* WineKartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineKartApp.swift; sourceTree = "<group>"; };
-		72C57930295718D5009B24E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72C57930295718D5009B24E1 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		72C57932295718D7009B24E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C57935295718D7009B24E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72C5793B295718D7009B24E1 /* WineKartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WineKartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,10 +94,12 @@
 		72C5792D295718D5009B24E1 /* WineKart */ = {
 			isa = PBXGroup;
 			children = (
-				72C5792E295718D5009B24E1 /* WineKartApp.swift */,
-				72C57930295718D5009B24E1 /* ContentView.swift */,
-				72C57932295718D7009B24E1 /* Assets.xcassets */,
-				72C57934295718D7009B24E1 /* Preview Content */,
+				72C579622957215A009B24E1 /* App */,
+				72C5796129572147009B24E1 /* Resources */,
+				72C5795829571FE6009B24E1 /* Services */,
+				72C5795929572020009B24E1 /* Utilities */,
+				72C5796029572122009B24E1 /* ViewComponents */,
+				72C5795A2957202E009B24E1 /* Scenes */,
 			);
 			path = WineKart;
 			sourceTree = "<group>";
@@ -125,6 +127,92 @@
 				72C5794B295718D7009B24E1 /* WineKartUITestsLaunchTests.swift */,
 			);
 			path = WineKartUITests;
+			sourceTree = "<group>";
+		};
+		72C5795829571FE6009B24E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72C5795929572020009B24E1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		72C5795A2957202E009B24E1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				72C5795B29572040009B24E1 /* DashboardScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		72C5795B29572040009B24E1 /* DashboardScene */ = {
+			isa = PBXGroup;
+			children = (
+				72C5795C2957205B009B24E1 /* Model */,
+				72C5795D2957206D009B24E1 /* View */,
+				72C5795E29572075009B24E1 /* ViewModel */,
+				72C5795F2957209A009B24E1 /* Protocols */,
+			);
+			path = DashboardScene;
+			sourceTree = "<group>";
+		};
+		72C5795C2957205B009B24E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72C5795D2957206D009B24E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72C57930295718D5009B24E1 /* ProductsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72C5795E29572075009B24E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72C5795F2957209A009B24E1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		72C5796029572122009B24E1 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		72C5796129572147009B24E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72C57932295718D7009B24E1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72C579622957215A009B24E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				72C5792E295718D5009B24E1 /* WineKartApp.swift */,
+				72C57934295718D7009B24E1 /* Preview Content */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C57931295718D5009B24E1 /* ContentView.swift in Sources */,
+				72C57931295718D5009B24E1 /* ProductsView.swift in Sources */,
 				72C5792F295718D5009B24E1 /* WineKartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
