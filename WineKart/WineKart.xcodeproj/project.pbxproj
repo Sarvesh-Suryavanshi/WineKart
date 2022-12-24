@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		72C5792F295718D5009B24E1 /* WineKartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5792E295718D5009B24E1 /* WineKartApp.swift */; };
-		72C57931295718D5009B24E1 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57930295718D5009B24E1 /* ProductsView.swift */; };
+		72C57931295718D5009B24E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57930295718D5009B24E1 /* HomeView.swift */; };
 		72C57933295718D7009B24E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C57932295718D7009B24E1 /* Assets.xcassets */; };
 		72C57936295718D7009B24E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C57935295718D7009B24E1 /* Preview Assets.xcassets */; };
 		72C57940295718D7009B24E1 /* WineKartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5793F295718D7009B24E1 /* WineKartTests.swift */; };
 		72C5794A295718D7009B24E1 /* WineKartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57949295718D7009B24E1 /* WineKartUITests.swift */; };
 		72C5794C295718D7009B24E1 /* WineKartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5794B295718D7009B24E1 /* WineKartUITestsLaunchTests.swift */; };
+		72C57964295723C2009B24E1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57963295723C2009B24E1 /* APIManager.swift */; };
+		72C57966295724B9009B24E1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C57965295724B9009B24E1 /* API.swift */; };
+		72C579682957343E009B24E1 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C579672957343E009B24E1 /* UIExtensions.swift */; };
+		72C5796A2957344B009B24E1 /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C579692957344B009B24E1 /* UtilityExtensions.swift */; };
+		72C5796C295739D5009B24E1 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5796B295739D5009B24E1 /* ProductList.swift */; };
+		72C5797129574F94009B24E1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5797029574F94009B24E1 /* HomeViewModel.swift */; };
+		72C5797329575277009B24E1 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5797229575277009B24E1 /* TabBarView.swift */; };
+		72C5797529577519009B24E1 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C5797429577519009B24E1 /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		72C5792B295718D5009B24E1 /* WineKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C5792E295718D5009B24E1 /* WineKartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineKartApp.swift; sourceTree = "<group>"; };
-		72C57930295718D5009B24E1 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		72C57930295718D5009B24E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72C57932295718D7009B24E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C57935295718D7009B24E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72C5793B295718D7009B24E1 /* WineKartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WineKartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,15 @@
 		72C57945295718D7009B24E1 /* WineKartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WineKartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C57949295718D7009B24E1 /* WineKartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineKartUITests.swift; sourceTree = "<group>"; };
 		72C5794B295718D7009B24E1 /* WineKartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineKartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72C57963295723C2009B24E1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		72C57965295724B9009B24E1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		72C579672957343E009B24E1 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		72C579692957344B009B24E1 /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
+		72C5796B295739D5009B24E1 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		72C5796F29573EFB009B24E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		72C5797029574F94009B24E1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		72C5797229575277009B24E1 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		72C5797429577519009B24E1 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +111,9 @@
 		72C5792D295718D5009B24E1 /* WineKart */ = {
 			isa = PBXGroup;
 			children = (
+				72C5796F29573EFB009B24E1 /* Info.plist */,
 				72C579622957215A009B24E1 /* App */,
+				72C57934295718D7009B24E1 /* Preview Content */,
 				72C5796129572147009B24E1 /* Resources */,
 				72C5795829571FE6009B24E1 /* Services */,
 				72C5795929572020009B24E1 /* Utilities */,
@@ -132,6 +151,8 @@
 		72C5795829571FE6009B24E1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				72C57963295723C2009B24E1 /* APIManager.swift */,
+				72C57965295724B9009B24E1 /* API.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -139,6 +160,8 @@
 		72C5795929572020009B24E1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				72C579672957343E009B24E1 /* UIExtensions.swift */,
+				72C579692957344B009B24E1 /* UtilityExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -165,6 +188,7 @@
 		72C5795C2957205B009B24E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72C5796B295739D5009B24E1 /* ProductList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,7 +196,7 @@
 		72C5795D2957206D009B24E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				72C57930295718D5009B24E1 /* ProductsView.swift */,
+				72C57930295718D5009B24E1 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +204,7 @@
 		72C5795E29572075009B24E1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				72C5797029574F94009B24E1 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,6 +219,7 @@
 		72C5796029572122009B24E1 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				72C5797629578132009B24E1 /* TabBar */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -210,9 +236,17 @@
 			isa = PBXGroup;
 			children = (
 				72C5792E295718D5009B24E1 /* WineKartApp.swift */,
-				72C57934295718D7009B24E1 /* Preview Content */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		72C5797629578132009B24E1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				72C5797229575277009B24E1 /* TabBarView.swift */,
+				72C5797429577519009B24E1 /* TabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +379,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72C57931295718D5009B24E1 /* ProductsView.swift in Sources */,
+				72C5797529577519009B24E1 /* TabView.swift in Sources */,
+				72C57964295723C2009B24E1 /* APIManager.swift in Sources */,
+				72C5797329575277009B24E1 /* TabBarView.swift in Sources */,
+				72C57931295718D5009B24E1 /* HomeView.swift in Sources */,
+				72C5796A2957344B009B24E1 /* UtilityExtensions.swift in Sources */,
+				72C5797129574F94009B24E1 /* HomeViewModel.swift in Sources */,
+				72C57966295724B9009B24E1 /* API.swift in Sources */,
+				72C5796C295739D5009B24E1 /* ProductList.swift in Sources */,
+				72C579682957343E009B24E1 /* UIExtensions.swift in Sources */,
 				72C5792F295718D5009B24E1 /* WineKartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,11 +549,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WineKart/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WineKart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,11 +579,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WineKart/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WineKart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
