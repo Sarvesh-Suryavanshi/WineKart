@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// View responsible for displaying Tab UI
+/// Responsible for providing us Tab View
 struct TabView: View {
 
     // MARK: - Properties
@@ -29,8 +29,10 @@ struct TabView: View {
     }
 }
 
+#if DEBUG
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         TabView(tab: .wines, isTabSelected: true)
     }
 }
+#endif

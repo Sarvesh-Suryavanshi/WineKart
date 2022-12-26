@@ -9,10 +9,12 @@ import Foundation
 
 typealias Products = [Product]
 
+// MARK: - Product-List
 struct ProductList: Codable {
-    let products: Products
+    var products: Products
 }
 
+// MARK: - Product
 struct Product: Codable, Identifiable {
     let citrusId: String?
     let title :String
@@ -24,9 +26,9 @@ struct Product: Codable, Identifiable {
     let ratingCount: Double
     let messages: Messages
     let isAddToCartEnable: Bool
-    let addToCartButtonText : String
+    let addToCartButtonText : AddToCartButtonText
     let isInTrolley: Bool
-    let isInWishlist: Bool
+    var isInWishlist: Bool
     let purchaseTypes: [PurchaseType]
     let isFindMeEnable: Bool
     let saleUnitPrice: Double
@@ -41,10 +43,15 @@ enum AddToCartButtonText: String, Codable {
 }
 
 // MARK: - Price
-struct Price: Codable {
+struct Price: Codable, Identifiable {
+    var id: UUID = UUID()
     let message: String
     let value: Double
     let isOfferPrice: Bool
+
+    private enum CodingKeys: String, CodingKey {
+        case message, value, isOfferPrice
+    }
 }
 
 enum Message: String, Codable {
@@ -66,7 +73,7 @@ struct Sash: Codable {
 // MARK: - PurchaseType
 
 struct PurchaseType: Codable {
-    let purchaseType: String
+    let purchaseType: PurchaseTypeEnum
     let displayName: DisplayName
     let unitPrice: Double
     let minQtyLimit: Int
@@ -79,4 +86,10 @@ enum DisplayName: String, Codable {
     case each = "each"
     case perBottle = "per bottle"
     case perCaseOf6 = "per case of 6"
+}
+
+
+enum PurchaseTypeEnum: String, Codable {
+    case bottle = "Bottle"
+    case purchaseTypeCase = "Case"
 }

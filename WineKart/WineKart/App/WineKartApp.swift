@@ -11,7 +11,7 @@ import SwiftUI
 struct WineKartApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(homeViewModel: HomeViewModel())
+            RootView(selectedTab: .wines)
         }
     }
 }

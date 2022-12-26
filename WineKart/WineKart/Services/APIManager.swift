@@ -12,7 +12,7 @@ class APIManager {
 
     static let shared = APIManager()
 
-    func callAPI<T: Codable>(request: URLRequest, decodebleObject: T.Type, completion: @escaping ((Result<T, Error>) -> Void)) {
+    func makeNetworkCall<T: Codable>(request: URLRequest, decodebleObject: T.Type, completion: @escaping ((Result<T, Error>) -> Void)) {
 
         URLSession.shared.dataTask(with: request) { data, urlResponse, error in
 
@@ -36,10 +36,4 @@ class APIManager {
             }
         }.resume()
     }
-}
-
-struct APIRequestDetails {
-    let method: HTTPType
-    let body: Data?
-    let httpHeader: [String: String]?
 }

@@ -7,7 +7,13 @@
 
 import Foundation
 
-enum API {
+enum HTTPType: String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+}
+
+enum APIEndpoint {
 
     private var baseURL: String {
         "https://run.mocky.io/v3"
@@ -22,6 +28,13 @@ enum API {
         }
     }
 
+    var stubFileName: String {
+        switch self {
+        case .productList:
+            return "ProductsStubResponse"
+        }
+    }
+
     var request: URLRequest? {
         switch self {
         case .productList:
@@ -33,8 +46,3 @@ enum API {
     }
 }
 
-enum HTTPType: String {
-    case get = "GET"
-    case post = "POST"
-    case put = "PUT"
-}
